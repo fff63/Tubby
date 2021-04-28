@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="submit">
+        <input type="submit" onclick="document.getElementById('modal').classList.add('show')" />
+    </div>
+    <center>
+        <div id="modal" class="hide">
+            <div id="openModal">
+                <input id="openModalInput" type="text" />
+                <input id="openModalSubmit" type="submit" onclick="refTodos()" />
+                <div id="closeModal">
+                    <input type="submit" onclick="document.getElementById('modal').classList.remove('show')" value="Close">
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
